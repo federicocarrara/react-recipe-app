@@ -1,0 +1,21 @@
+.navbar {
+  background-color: #B0C4DE;
+  height: 30px;
+  padding-top: 10px;
+}
+
+.navbar ul {
+  display: inline;
+}
+
+.navbar ul li {
+  float: right;
+  text-decoration: none;
+  margin-right: 3%;
+  display: inline;
+}
+
+.navbar h3 {
+  display: inline;
+  padding-left: 3%;
+}

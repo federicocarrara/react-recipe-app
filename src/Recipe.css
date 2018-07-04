@@ -1,0 +1,22 @@
+.recipe-card {
+  width: 30%;
+  border: solid;
+  border-radius: 15px;
+  background-color: lightgrey;
+  margin: 1.5%;
+  display: inline-block;
+}
+
+.recipe-card-img img {
+  width: 100%;
+  max-height: 300px;
+  border-radius: 13px 13px 0 0;
+}
+
+.recipe-card-content {
+  margin: 2%;
+}
+
+.recipe-card-content h3 {
+  margin: 1%;
+}
