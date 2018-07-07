@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import './Recipe.css';
 
 class Recipe extends Component {
+  handleDeleteRecipe = () => {
+    this.props.deleteRecipe(this.props.recipe)
+  }
   render(){
     const {title, img, instructions} = this.props.recipe;
     const ingredients = this.props.recipe.ingredients.map(
@@ -20,6 +23,7 @@ class Recipe extends Component {
           <ul>{ingredients}</ul>
           <h4>instructions:</h4>
           <p>{instructions}</p>
+          <button onClick={this.handleDeleteRecipe}>DELETE</button>
         </div>
       </div>
     );

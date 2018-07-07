@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './NewRecipeForm.css'
 
 class NewRecipeForm extends Component {
   constructor(props){
@@ -39,7 +40,8 @@ class NewRecipeForm extends Component {
       ingredients:[''],
       img:'',
       instructions:''
-    })
+    });
+    this.props.showForm();
   }
   onClose = () => {
     this.props.closeForm(true)
@@ -48,31 +50,33 @@ class NewRecipeForm extends Component {
     const {title, ingredients, img, instructions} = this.state;
     let ingredientsInputs = ingredients.map((ingredient, i) => (
       <div key={`ingredient-${i}`}>
-        <label>{i+1}</label>
-        <input name={i} value={ingredient} onChange={this.handleIngredientChange}/>
+        <label style={{display:'inline-block'}}>{i+1}.</label>
+        <input name={i} value={ingredient} onChange={this.handleIngredientChange} required/>
       </div>
     ))
     return(
-      <form onSubmit={this.saveRecipe}>
-        <button onClick={this.onClose} type='button'> X </button>
-        <div>
-          <label>title</label>
-          <input name="title" value={title} onChange={this.handleChange}/>
+      <form className='recipe-card-form' onSubmit={this.saveRecipe}>
+        <div className='content'>
+          <button onClick={this.onClose} type='button'> X </button>
+          <div>
+            <label>title</label>
+            <input name="title" value={title} onChange={this.handleChange} required/>
+          </div>
+          <div>
+            <label>ingredients</label>
+            {ingredientsInputs}
+            <button type='button' style={{fontSize:25}} onClick={this.addNewIngredient}> + </button>
+          </div>
+          <div>
+            <label>instructions</label>
+            <textarea name="instructions" value={instructions} onChange={this.handleChange} required/>
+          </div>
+          <div>
+            <label>image url</label>
+            <input name="img" value={img} onChange={this.handleChange} required/>
+          </div>
+          <button type='submit'> SAVE </button>
         </div>
-        <div>
-          <label>ingredients</label>
-          {ingredientsInputs}
-          <button type='button' onClick={this.addNewIngredient}> + </button>
-        </div>
-        <div>
-          <label>instructions</label>
-          <textarea name="instructions" value={instructions} onChange={this.handleChange}/>
-        </div>
-        <div>
-          <label>image url</label>
-          <input name="img" value={img} onChange={this.handleChange}/>
-        </div>
-        <button type='submit'> SAVE </button>
       </form>
     );
   }

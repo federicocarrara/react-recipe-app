@@ -1,0 +1,29 @@
+.recipe-card-form {
+  width: 40%;
+  border: solid;
+  border-radius: 15px;
+  background-color: lightgrey;
+  margin: 1.5%
+}
+label {
+  display: block;
+}
+.content {
+  margin: 5px;
+}
+input {
+  width: calc(100% - 5px);
+
+}
+textarea {
+  width: calc(100% - 5px);
+  max-width: calc(100% - 5px);
+}
+button {
+  width: 100%;
+  text-align: right;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

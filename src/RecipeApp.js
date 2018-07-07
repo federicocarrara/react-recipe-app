@@ -37,6 +37,14 @@ class RecipeApp extends Component {
       }
     });
   }
+  deleteRecipe = (recipe) => {
+    const recipes = this.state.recipes.filter((el) => (
+      el.id !== recipe.id
+    ));
+    this.setState({
+        recipes
+    });
+  }
   closeForm = (formClosed) => {
     this.setState({
       formClosed
@@ -61,9 +69,12 @@ class RecipeApp extends Component {
         />
       {this.state.formClosed === false ?
       <NewRecipeForm
+        showForm={this.showForm}
         addRecipe={this.addRecipe}
         closeForm={this.closeForm} /> : null}
-      <RecipeList recipes={this.state.recipes} />
+      <RecipeList
+        deleteRecipe={this.deleteRecipe}
+        recipes={this.state.recipes} />
       </div>
     );
   }

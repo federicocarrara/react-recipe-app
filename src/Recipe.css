@@ -1,5 +1,5 @@
 .recipe-card {
-  width: 30%;
+  width: 29%;
   border: solid;
   border-radius: 15px;
   background-color: lightgrey;
@@ -19,4 +19,11 @@
 
 .recipe-card-content h3 {
   margin: 1%;
+}
+button {
+  width: 100%;
+  text-align: right;
+  background: none;
+  border: none;
+  outline: none; 
 }
