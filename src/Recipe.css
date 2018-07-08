@@ -1,10 +1,11 @@
 .recipe-card {
-  width: 29%;
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
   border: solid;
   border-radius: 15px;
   background-color: lightgrey;
   margin: 1.5%;
-  display: inline-block;
 }
 
 .recipe-card-img img {
@@ -15,15 +16,15 @@
 
 .recipe-card-content {
   margin: 2%;
+  overflow-wrap: break-word;
 }
 
 .recipe-card-content h3 {
   margin: 1%;
 }
-button {
-  width: 100%;
-  text-align: right;
+.recipe-card-content button {
+  float: right;
   background: none;
   border: none;
-  outline: none; 
+  outline: none;
 }

@@ -1,27 +1,34 @@
+.formDiv {
+  width: 100%;
+  margin: 3%;
+}
+
 .recipe-card-form {
-  width: 40%;
+  width: 60%;
+  margin-left: 17%;
   border: solid;
   border-radius: 15px;
   background-color: lightgrey;
-  margin: 1.5%
-}
-label {
-  display: block;
 }
 .content {
   margin: 5px;
 }
-input {
-  width: calc(100% - 5px);
-
+.content label {
+  display: block;
 }
-textarea {
+.content input {
+  width: calc(100% - 5px);
+}
+.content textarea {
   width: calc(100% - 5px);
   max-width: calc(100% - 5px);
 }
-button {
+.content button {
   width: 100%;
+  display:block;
   text-align: right;
+  word-wrap: break-word;
+  display: block;
   background: none;
   border: none;
   outline: none;

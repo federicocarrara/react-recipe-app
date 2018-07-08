@@ -12,7 +12,7 @@ class RecipeList extends Component {
     ))
     return (
       <div>
-        <ul>
+        <ul className='recipeList'>
           {recipes}
         </ul>
       </div>

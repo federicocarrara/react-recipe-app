@@ -22,8 +22,29 @@ class RecipeApp extends Component {
         ingredients:['milk', 'sugar'],
         img:"https://assets.marthastewart.com/styles/wmax-1500/d33/vanilla-icecream-0611med107092des/vanilla-icecream-0611med107092des_sq.jpg?itok=ErVG8ofB",
         instructions:"blend it all"
-      }],
-      nextRecipeId: 2,
+      },
+      {
+        id:2,
+        title:'pasta',
+        ingredients:['flower', 'water'],
+        img:"https://www.cookingclassy.com/wp-content/uploads/2018/01/instant-pot-spaghetti-12-500x500.jpg",
+        instructions:"mix the ingredients"
+        },
+        {
+        id:3,
+        title:'ice cream',
+        ingredients:['milk', 'sugar'],
+        img:"https://assets.marthastewart.com/styles/wmax-1500/d33/vanilla-icecream-0611med107092des/vanilla-icecream-0611med107092des_sq.jpg?itok=ErVG8ofB",
+        instructions:"blend it all"
+      },
+      {
+        id:4,
+        title:'pasta',
+        ingredients:['flower', 'water'],
+        img:"https://www.cookingclassy.com/wp-content/uploads/2018/01/instant-pot-spaghetti-12-500x500.jpg",
+        instructions:"mix the ingredients"
+        }],
+      nextRecipeId: 5,
       formClosed: true
     }
   }

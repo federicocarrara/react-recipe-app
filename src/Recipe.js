@@ -23,7 +23,7 @@ class Recipe extends Component {
           <ul>{ingredients}</ul>
           <h4>instructions:</h4>
           <p>{instructions}</p>
-          <button onClick={this.handleDeleteRecipe}>DELETE</button>
+          <button style={{fontSize:16}} onClick={this.handleDeleteRecipe}>DELETE</button>
         </div>
       </div>
     );
