@@ -1,3 +1,11 @@
+# react-recipe-app
+[live version](https://dashboard.heroku.com/apps/guarded-basin-22019)
+Hosted on Heroku
+# Technologies
+- React
+- CSS (flexbox)
+- HTML 
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
