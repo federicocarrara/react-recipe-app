@@ -1,5 +1,5 @@
 # react-recipe-app
-[live version](https://dashboard.heroku.com/apps/guarded-basin-22019)
+[live version](https://guarded-basin-22019.herokuapp.com/)
 Hosted on Heroku
 # Technologies
 - React
